@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #0077cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    animation: fadeIn 1s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Color change on hover */
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centering the main content */
+}
+
+.section {
+    margin-bottom: 40px;
+    text-align: center; /* Centering text */
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    align-items: center; /* Center align items */
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0; /* Add margin between projects */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for project cards */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering form elements */
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for input fields */
+}
+
+form button {
+    padding: 10px 20px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #005fa3;
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0077cc;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
