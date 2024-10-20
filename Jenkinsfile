@@ -1,5 +1,9 @@
 pipeline {
     agent any
+        
+    tools {
+        nodejs 'node' // Use the name you configured in Jenkins
+    }
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('cred') // ID for DockerHub credentials stored in Jenkins
