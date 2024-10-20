@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Checkout code from your repository
-                git branch: 'master', url: 'https://https://github.com/DevOps-AWS-123/Portafolio.git/your-repo.git'
+                git branch: 'master', url: 'https://https://github.com/DevOps-AWS-123/Portafolio.git'
             }
         }
 
