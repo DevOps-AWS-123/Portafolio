@@ -21,12 +21,19 @@ pipeline {
                 checkout scm
             }
         }
+<<<<<<< HEAD
 
         stage("Install Dependencies") {
             steps {
                 cache(path: './node_modules', key: 'npm-dependencies') {
                     sh "npm install"
                 }
+=======
+        stage("Test"){
+            steps{
+                sh "sudo apt install npm"
+                sh "npm test"
+>>>>>>> 518790edace73c3d39df9cded041dc7772a7d6e6
             }
         }
 
@@ -42,6 +49,7 @@ pipeline {
             }
         }
     }
+<<<<<<< HEAD
 
     post {
         always {
@@ -56,4 +64,6 @@ pipeline {
         //          body: "Check Jenkins for more details: ${env.BUILD_URL}"
         // }
     }
+=======
+>>>>>>> 518790edace73c3d39df9cded041dc7772a7d6e6
 }
